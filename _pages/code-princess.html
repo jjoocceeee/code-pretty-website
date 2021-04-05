@@ -1,0 +1,27 @@
+---
+layout: page
+title: "Code Princess"
+background: '/assets/images/code_princess/pink_dress-13.jpg'
+---
+
+<div class="container">
+    {% for cp in site.code_princess %}
+      <div class="row align-items-center justify-content-center mb-5">
+        <div class="col-8 justify-content-center">
+          <div class="row">
+            <div class="col">
+              <h3 class="text-center">{{cp.princess}}</h3>
+            </div>
+          </div>
+          <div class="image">
+            <span class="black_span">
+            <a href="{{ cp.url | prepend: site.baseurl | replace: '//', '/' }}">
+              <img src="{{ cp.thumbnail | prepend: site.baseurl | replace: '//', '/' }}"
+                class=" border-white" alt="Code Princess">
+            </a>
+          </span>
+        </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>

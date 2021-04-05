@@ -1,66 +1,131 @@
 ---
+quote_background: '/assets/Images/about/books-2.jpg'
+maincolor: '#AC716E'
+secondarycolor: '#F2CBCB'
 layout: default
 ---
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header class="masthead pb-0 mb-0"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
   <header class="masthead">
     {% endif %}
-    <div class="overlay"></div>
+    <div class=""></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
           <div class="page-heading">
-            <h1>{{ site.title }}</h1>
-            {% if site.description %}
-            <span class="subheading">{{ site.description }}</span>
-            {% endif %}
+            <h3></h3>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
-
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
-
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          </p>
-        </article>
-
-        <hr>
-
-        {% endfor %}
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
-
+  <div class="container py-5">
+    <div class="row pb-5">
+      <div class="col text-center">
+        <h1>
+          Too Pretty to Code Ugly
+        </h1>
+        <p>
+          Resources, products, and a community for the feminine developer :heart: 
+        </p>
       </div>
     </div>
+    <div class="row">
+      <div class="col col-lg-6 col-md-12 col-sm-12">
+        <a href="/pages/book-club.html">
+          <img src="/assets/Images/curled-14.jpg" class=" border-white img-thumbnail"
+            alt="Portfolio Piece">
+            <span class="image-text-overlay">Book Club</span>
+        </a>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <a href="/pages/code-princess.html">
+          <img src="/assets/Images/code_princess/pink_dress-13.jpg" class=" border-white img-thumbnail"
+            alt="Portfolio Piece">
+            <span class="image-text-overlay">Code Princesses</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mb-3" style="background-color: #{{ site.maincolor }}">
+    <div class="row ">
+      <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
+        <p>
+          Stay in the loop! Sign up below to be notified of new products, tech resources, and more!
+        </p>
+      </div>
+    </div>
+    <form>
+      <div class="row justify-content-center align-items-center">
+        <div class="offset-1 col-3">
+          <div class="form-group">
+            <label for="EmailInput"></label>
+            <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="nameInput"></label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Name">
+          </div>
+        </div>
+        <div class="col-3">
+          <button type="submit" class="btn btn-primary btn-sm h-25 d-inline-block">I Want In!</button>
+        </div>
+        </div>
+    </form>
+  </div>
+
+  <div class="container-fluid bckgrnd mt-5"
+    style="background-image: url('{{ page.quote_background | prepend: site.baseurl | replace: '//', '/' }}')">
+    <div class="row py-5">
+      <div class="col col-lg-6 col-md-8 col-sm-12 mx-auto text-center">
+        <span class="transparent">
+          <div class="post-heading">
+            <h3 class="">“I learned to always take on things I'd never done before. Growth and comfort do not coexist.”</h3>
+            <h5 class="subheading">- Ginni Rometty, CEO of IBM</h5>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mb-3 mt-5">
+        <h1 style="color: {{page.maincolor}}">Featured posts</h1>
+      </div>
+    </div>
+      {% for featuredPost in site.posts %}
+      <div class="row my-3">  
+        <div class="col-lg-4 col-md-4 col-sm-0 align-items-center d-none d-lg-block">
+          <div class="image">
+              <span class="black_span">
+              <a href="{{ featuredPost.url | prepend: site.baseurl | replace: '//', '/' }}">
+                <img src="{{ featuredPost.thumbnail | prepend: site.baseurl | replace: '//', '/' }}"
+                  class=" border-white" alt="Portfolio Piece">
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 mb-9">
+          <a href="{{ featuredPost.url | prepend: site.baseurl | replace: '//', '/' }}">
+            <h3 class="text-center">{{featuredPost.title}}</h3>
+          </a>
+            {% for tag in featuredPost.tags %}
+              <span class="badge badge-pill primary-color">{{tag}}</span>
+            {% endfor %}
+            <p class="small-font">{{featuredPost.description}}</p>
+            <a href="{{ featuredPost.url | prepend: site.baseurl | replace: '//', '/' }}">
+              <button type="submit" class="btn btn-secondary bckgrnd-dark btn-sm">{{featuredPost.button_name}}</button>
+            </a>
+        </div>
+      </div>
+      <hr>
+      {% endfor %}
   </div>

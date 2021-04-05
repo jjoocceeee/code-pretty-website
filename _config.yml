@@ -1,9 +1,8 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
+title:              Code Pretty
+description:        Code Pretty - resources for the feminine developer
 author:             Start Bootstrap
-baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+baseurl:            "/"
+url:                ""
 
 # Social Profiles
 twitter_username:   SBootstrap
@@ -11,6 +10,8 @@ github_username:    StartBootstrap
 facebook_username:  StartBootstrap
 instagram_username:  
 linkedin_username:
+maincolor: "F2CBCB"
+secondarycolor: "9c0045"
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
@@ -23,3 +24,16 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:title
+  code_princess:
+    output: true
+    permalink: /:collection/:title
+
+contact_url: https://jadenholladay.herokuapp.com/jocee
+
+maincolor: '#F2CBCB'
+secondarycolor: '#F2CBCB'
+compliment: '#9c0045'
