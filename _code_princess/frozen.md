@@ -14,11 +14,15 @@ To understand how snow falls, tons of research is needed, including simulations 
 
 Disney decided that wasn't the case! When the movie Frozen was being made, Disney wanted the snow to look as real as possible (even though the movie is an animation, and by default isn't realistic looking... I mean just look at how big Elsa's eyes are!🤷‍♀️), so they reached out to computer graphics researcher, Chenfanfu Jiang, who advanced a technique known as- "**Material Point Method**" to create simulations of realistic snow for the movie Frozen.  
 
-![Blue font code overlay of girl in blue dress](/assets/images/code_princess/frozen/frozen-1.jpg)
+
+Check out some of the snow animations he made--
+<iframe width="325"  height="275" src="https://www.youtube.com/embed/pza5mz5Dn4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Material Point Method is a system of numerical calculations that are used to simulate the behavior of any material - solids, liquids, or gases (or a mix, like snow!). 
 
 The advancement in MPM led by the use in the movie Frozen is now being used to study safer avalanche mitigation techniques AND solving 67-year old avalanche mysteries
+
+![Blue font code overlay of girl in blue dress](/assets/images/code_princess/frozen/frozen-1.jpg)
 
 TW: death & trauma
 

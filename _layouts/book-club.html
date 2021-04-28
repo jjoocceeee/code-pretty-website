@@ -1,253 +1,188 @@
 ---
 layout: default
 ---
-<div class="container-fluid bckgrnd pt-5 mb-5" style="background-color: #{{page.mainColor}}">
-  <div class="row py-5 align-items-center">
-    <div class="col text-center justify-content-center">
-      <h2 style="color: black; font-family: 'Amatic SC', cursive; font-size: 50px;">{{ page.title }}</h2>
-      {% if page.description %}
-      <span class="subheading" style="color: white">
-        <h4>{{ page.description }}</h4>
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead pb-0 mb-0"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+          <!-- <div class="page-heading">
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+        <div class="image">
+          <a href="{{ '/assets/images/book_club/logo/main_logo.png' | prepend: site.baseurl | replace: '//', '/' }}">
+            <img src="{{ '/assets/images/book_club/logo/main_logo.png' | prepend: site.baseurl | replace: '//', '/' }}"
+              class=" border-white" alt="Book Club Logo">
+          </a>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>
+          Welcome to the STEM Book Club! A Book club for curious people who love learning all things Science, Technology, Engineering, and Math!
+        </p>
+        <p> 
+          Do you love STEM? Do you find yourself asking yourself wonderfully curious questions like - 
+        </p>  
+          <ul>
+            <li>How do scientist calculate the mass of the Earth?</li> 
+            <li>Why were the Egyptians able to calculate imaginary numbers without using negatives?</li>
+            <li>Why did Neanderthals go exstinct? </li>
+          </ul>
+        <p>
+          Than this is the place for you, and we are so glad you are here!
+        </p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
+        <p>
+          <a class="btn btn-primary btn-sm h-25 d-inline-block"href="https://discord.gg/6hcZ37HR" target="_blank">Join our Discord Server!</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mb-3">
+    <div class="row mt-3">
+      <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
+        <h1>
+          May's Book Choice
+        </h1>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+        <div class="image">
+            <a href="https://www.janelleshane.com/book-you-look-like-a-thing">
+              <img src="https://images.squarespace-cdn.com/content/v1/5d62d15300eb5b0001437ac0/1571423079485-IZV5TPVFXY5KUGTU0H1B/ke17ZwdGBToddI8pDm48kF3b0F6TZLT9otilcPsBYFF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUIsudu2kQUUvXD3nDtzWC7e7jcZ2kiePDyQxwLmmWY5H3bqxw7fF48mhrq5Ulr0Hg/YouLookLikeAThing_HC2.png?format=1000w"
+                class=" border-white" alt="You Look Like a Thing and I Love You">
+            </a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mx-auto text-center justify-content-center">
+        <h3>
+          <a href="https://www.janelleshane.com/book-you-look-like-a-thing">
+            You Look Like a Thing and I Love You
+          </a>
+        </h3>            
+        <h5>By Janelle Shane</h5>
+        <p>
+          <span class="badge badge-pill primary-color">Machine Learning</span>
+          <span class="badge badge-pill primary-color">Computer Science</span>
+          <span class="badge badge-pill primary-color">Ethics in computing</span>
+        </p>
+      </div>
+  </div>
+    <!-- <form>
+      <div class="row justify-content-center align-items-center">
+        <div class="offset-1 col-3">
+          <div class="form-group">
+            <label for="EmailInput"></label>
+            <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="nameInput"></label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Name">
+          </div>
+        </div>
+        <div class="col-3">
+          <button type="submit" class="btn btn-primary btn-sm h-25 d-inline-block">Let's Read!</button>
+        </div>
+        </div>
+    </form> -->
+  </div>
+
+  <!-- Uncomment when we have previous books! -->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col text-center mb-3 mt-5">
+        <h1>Previous Books</h1>
+      </div>
+    </div>
+    <div class="row mb-5">
+    {% for bm in site.books %}
+      <div class="col-lg-3 col-md-3 col-sm-12 justify-content-center">
+        <div class="row">
+          <div class="col">
+            <div class="image">
+              <span class="black_span">
+                <a href="{{ bm.url | prepend: site.baseurl | replace: '//', '/' }}">
+                  <img src="{{ bm.thumbnail | prepend: site.baseurl | replace: '//', '/' }}"
+                    class=" border-white" alt="Code Princess">
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mt-n3 text-center">
+            <h4>{{ bm.month }}</h4>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div> -->
+  <div class="container-fluid bckgrnd"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  <div class="row py-5">
+    <div class="col col-lg-6 col-md-8 col-sm-12 mx-auto text-center">
+      <span class="transparent">
+        <div class="post-heading">
+          <h3 class="">“The world belongs to those who read.”</h3>
+          <h5 class="subheading">- Rick Holland</h5>
+        </div>
       </span>
-      {% endif %}
-      {% if page.buttonText %}
-      <a class="btn m-2" style="background-color: #{{page.highlightSecondary}} ; opacity: 1.0;"
-        href="{{ page.buttonUrl }}" data-toggle="tooltip" data-placement="top" title="{{ page.buttonText }}">
-        <p class="m-0">{{ page.buttonText }}</p>
-      </a>
-      {% endif %}
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row justify-content-center m-4">
-    <div class="col-sm-4 col-md-4 col-lg-4">
-      <a target="_blank" href="{{ page.portrait }}">
-        <img class="basic-image outline-image" src="{{ page.portrait | prepend: site.baseurl | replace: '//', '/' }}"
-          alt="{{ page.title }}">
-      </a>
-    </div>
-    <!-- order-lg-2 -->
-    <div class="col-md-6 col-lg-4 col-sm-4">
-      <p>{{page.bio}}</p>
-      <p>{{page.bio_2}}</p>
-    </div>
-  </div>
-  <div class="row my-5">
-    <div class="col">
-      <a target="_blank" href="{{page.image_1}}">
-        <img class="basic-image outline-image" src="{{ page.image_1 | prepend: site.baseurl | replace: '//', '/' }}"
-          alt="{{ page.title }}">
-      </a>
-    </div>
-  </div>
-  <div class="row align-items-center my-4">
-    <div class="col-lg-5 d-none d-md-block">
-      <a target="_blank" href="{{page.image_1}}">
-        <img class="basic-image outline-image" src="{{ page.image_3 | prepend: site.baseurl | replace: '//', '/' }}"
-          alt="{{ page.title }}">
-      </a>
-    </div>
-    <div class="col-md-7 col-lg-7 col-sm-12 justify-content-center">
-      <div class="row">
-        <div class="col align-items-center text-center">
-          <h5 style="color: black; font-family: 'Amatic SC', cursive; font-size: 50px;">Stats & Audience</h5>
-        </div>
-      </div>
-      <div class="row mb-3">
-        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
-          <div class="row">
-            <div class="col justify-content-center text-center">
-              <i class="fab fa-instagram fa-4x" style="color:#{{page.mainColor}};"></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="py-0 my-0">{{page.followers}}</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
-          <div class="row">
-            <div class="col justify-content-center text-center">
-              <i class="fa fa-comments fa-4x" style="color:#{{page.mainColor}};"></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="py-0 my-0">{{page.comments}}</p>
-              <p class="py-0 my-0">{{page.saves}}</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
-          <div class="row">
-            <div class="col justify-content-center text-center">
-              <i class="fa fa-heart fa-4x" style="color:#{{page.mainColor}};"></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="py-0 my-0">{{page.impressions}}</p>
-              <p class="py-0 my-0">{{page.shares}}</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
-          <div class="row">
-            <div class="col justify-content-center text-center">
-              <i class="fa fa-globe fa-4x" style="color:#{{page.mainColor}};"></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="py-0 my-0">
-                {{page.america}}
-              </p>
-              <p class="py-0 my-0">
-                {{page.worldwide}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
-          <div class="row">
-            <div class="col justify-content-center text-center">
-              <i class="fa fa-users fa-4x" style="color:#{{page.mainColor}};"></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="py-0 my-0">
-                {{page.age_1}}
-              </p>
-              <p class="py-0 my-0">
-                {{page.age_2}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
-          <div class="row">
-            <div class="col justify-content-center text-center">
-              <i class="fa fa-heart fa-4x" style="color:#{{page.mainColor}};"></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="py-0 my-0">
-                {{page.female}}
-              </p>
-              <p class="py-0 my-0">
-                {{page.male}}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row my-5">
-    <div class="col">
-      <a target="_blank" href="{{page.banner_2}}">
-        <img class="basic-image outline-image" src="{{ page.banner_2 | prepend: site.baseurl | replace: '//', '/' }}"
-          alt="{{ page.title }}">
-      </a>
-    </div>
-  </div>
 
-  <div class="row align-items-center p-2">
-    <div class="col-sm-12 col-md-12 col-lg-5 order-lg-2 justify-content-center">
-      <p>{{page.explanation}}</p>
-      <p>{{page.gallery}}</p>
-      <div class="text-center">
-        <h5 style="color: black; font-family: 'Amatic SC', cursive; font-size: 35px;"">Products</h5>
-        <a class="py-0 my-0" href="{{page.post_product}}"><p>Post + Caption</p></a>
-        <a class="py-0 my-0" href="{{page.post_stop_motion}}"><p>Stop Motion Video + Caption</p></a>
-        <a class="py-0 my-0" href="{{page.post_graphic_design}}"><p>Graphic Design + Caption</p></a>
-        <p class="py-0 my-0"> Instagram Story Series</p>
-    </div>
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-7">
-      <div class="row">
-        <div class="col text-center" >
-          <h1 style="color: black; font-family: 'Amatic SC', cursive;">{{page.notable_collaborations}} - <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software?&ef_id=Cj0KCQjwupD4BRD4ARIsABJMmZ8xiAJY1FNVVEaOBib-fREPoUQNs-fSfZBV4UJESa-LdPg3DeatfFgaAtpeEALw_wcB:G:s&OCID=AID2100233_SEM_Cj0KCQjwupD4BRD4ARIsABJMmZ8xiAJY1FNVVEaOBib-fREPoUQNs-fSfZBV4UJESa-LdPg3DeatfFgaAtpeEALw_wcB:G:s&gclid=Cj0KCQjwupD4BRD4ARIsABJMmZ8xiAJY1FNVVEaOBib-fREPoUQNs-fSfZBV4UJESa-LdPg3DeatfFgaAtpeEALw_wcB">{{page.collab_name}}</a></h1>
-        </div>
+  <div class=" mt-5 container">
+    <div class="row mb-3">
+      <div class="col text-center">
+        <h1>Commonly Asked Questions</h1>
       </div>
-      <div class="row">
-        <div class="col">
-          <a target="_blank" href="{{page.teams_1}}">
-            <img class="basic-image outline-image" src="{{ page.teams_1 | prepend: site.baseurl | replace: '//', '/' }}"
-              alt="{{ page.title }}">
-          </a>
-        </div>
-        <div class="col">
-          <a target="_blank" href="{{page.teams_2}}">
-            <img class="basic-image outline-image" src="{{ page.teams_2 | prepend: site.baseurl | replace: '//', '/' }}"
-              alt="{{ page.title }}">
-          </a>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Does it cost to join?</h3>
+        <p>
+          NOPE! Everything is totally free!
+        </p>
       </div>
-      <div class="row pt-4">
-        <div class="col">
-          <a target="_blank" href="{{page.teams_3}}">
-            <img class="basic-image outline-image" src="{{ page.teams_3 | prepend: site.baseurl | replace: '//', '/' }}"
-              alt="{{ page.title }}">
-          </a>
-        </div>
-        <div class="col">
-          <a target="_blank" href="{{page.teams_4}}">
-            <img class="basic-image outline-image" src="{{ page.teams_4 | prepend: site.baseurl | replace: '//', '/' }}"
-              alt="{{ page.title }}">
-          </a>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>How do I join?</h3>
+        <p>
+          You can join the discussions on either Discord, or Instagram! Our discord server is where most of the action happens!
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>How do I participate?</h3>
+        <p>
+          How you participate is totally up to you. Every month we will pick a new book and topic. 
+          If that book interests you, then give it a read! If the book isn't something you're interested in, then skip this month. 
+          Once you finish a book, tell us what you thought and learned and join the discussion.
+        </p>
       </div>
     </div>
   </div>
-
-
-  <div class="row align-items-center p-2">
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <div class="row">
-        <div class="col text-center" >
-          <h1 style="color: black; font-family: 'Amatic SC', cursive;">Other collaborations</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <a target="_blank" href="{{page.other_collaborations_link_1}}">
-            <img class="basic-image outline-image" src="{{ page.other_collaborations_pic_1 | prepend: site.baseurl | replace: '//', '/' }}"
-              alt="{{ page.title }}">
-          </a>
-          <p class="image-caption">{{page.other_collaborations_1}}</p>
-        </div>
-        <div class="col">
-          <a target="_blank" href="{{page.other_collaborations_link_2}}">
-            <img class="basic-image outline-image" src="{{ page.other_collaborations_pic_2 | prepend: site.baseurl | replace: '//', '/' }}"
-              alt="{{ page.title }}">
-          </a>
-          <p class="image-caption">{{page.other_collaborations_2}}</p>
-        </div>
-        <div class="col">
-          <a target="_blank" href="{{page.other_collaborations_link_3}}">
-            <img class="basic-image outline-image" src="{{ page.other_collaborations_pic_3 | prepend: site.baseurl | replace: '//', '/' }}"
-              alt="{{ page.title }}">
-          </a>
-          <p class="image-caption">{{page.other_collaborations_3}}</p>
-        </div>
-        <div class="col">
-          <a target="_blank" href="{{page.other_collaborations_link_4}}">
-            <img class="basic-image outline-image" src="{{ page.other_collaborations_pic_4 | prepend: site.baseurl | replace: '//', '/' }}"
-              alt="{{ page.title }}">
-          </a>
-          <p class="image-caption">{{page.other_collaborations_4}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row align-items-center">
-    <div class="col-12 text-center">
-      <p>I love my home state of Utah! If you are based out of Utah, I am happy to give you a discount on all collaborations!</p>
-    </div>
-  </div>
-</div>

@@ -1,6 +1,6 @@
-$main: #F2CBCB;
-$secondary: #9c0045;
-$secondary_dark: #8f0442;
+$main: #BAD7D4;
+$secondary: #BAD7D4;
+$secondary_dark: #95BFBA;
 $dark: #9c0045;
 $gray: #e9e6e5;
 $highlight: #d35d72;
@@ -350,22 +350,21 @@ img {
     z-index: 1;
   }
 .btn-primary {
-  color: #fff;
+  color: #000000;
   background-color: $main;
   border-color: $main;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: $secondary_dark;
+  border-color: $secondary_dark;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  background-color: $secondary_dark;
+  border-color: $secondary_dark;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -377,8 +376,8 @@ img {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
+  background-color: #C98A87;
+  border-color: #C98A87;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,

@@ -27,23 +27,23 @@
   }
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
-    background: transparent;
+    background: white;
     .navbar-brand {
       padding: 10px 20px;
-      color: $white;
+      color: $black;
       &:focus,
       &:hover {
-        color: fade-out($white, .2);
+        color: fade-out($primary, .2);
       }
     }
     .navbar-nav {
       > li.nav-item {
         > a {
           padding: 10px 20px;
-          color: $white;
+          color: $black;
           &:focus,
           &:hover {
-            color: fade-out($white, .2);
+            color: fade-out($black, .2);
           }
         }
       }

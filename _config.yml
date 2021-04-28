@@ -5,11 +5,7 @@ baseurl:            "/"
 url:                ""
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
+instagram_username:  jocee.holladay
 maincolor: "F2CBCB"
 secondarycolor: "9c0045"
 
@@ -25,6 +21,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
 collections:
+  books:
+    output: true
+    permalink: /:collection/:title
   pages:
     output: true
     permalink: /:collection/:title
