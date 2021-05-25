@@ -1,0 +1,4 @@
+I"Á<p>Do you have a website? Is there a contact form on your website? Does this contact form send you an email? Is it written like this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href = </span><span class="s">"mailto: your_email@website.com"</span><span class="nt">&gt;</span>Send Email<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+:ET

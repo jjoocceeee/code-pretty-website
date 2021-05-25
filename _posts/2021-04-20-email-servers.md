@@ -3,8 +3,8 @@ layout: post
 title: "Why the Contact me button on your website is a mistake --- and how to fix it."
 subtitle: "HTML email tag is NOT the way to go when adding a Contact button on your website. Instead write a custom email server."
 date: 2021-01-31 10:45:13 -0400
-background: 'https://images.squarespace-cdn.com/content/v1/5d62d15300eb5b0001437ac0/1571423079485-IZV5TPVFXY5KUGTU0H1B/ke17ZwdGBToddI8pDm48kF3b0F6TZLT9otilcPsBYFF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUIsudu2kQUUvXD3nDtzWC7e7jcZ2kiePDyQxwLmmWY5H3bqxw7fF48mhrq5Ulr0Hg/YouLookLikeAThing_HC2.png?format=1000w'
-thumbnail: 'https://images.squarespace-cdn.com/content/v1/5d62d15300eb5b0001437ac0/1571423079485-IZV5TPVFXY5KUGTU0H1B/ke17ZwdGBToddI8pDm48kF3b0F6TZLT9otilcPsBYFF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUIsudu2kQUUvXD3nDtzWC7e7jcZ2kiePDyQxwLmmWY5H3bqxw7fF48mhrq5Ulr0Hg/YouLookLikeAThing_HC2.png?format=1000w'
+background:
+thumbnail:
 ---
 
 Do you have a website? Is there a contact form on your website? Does this contact form send you an email? Is it written like this

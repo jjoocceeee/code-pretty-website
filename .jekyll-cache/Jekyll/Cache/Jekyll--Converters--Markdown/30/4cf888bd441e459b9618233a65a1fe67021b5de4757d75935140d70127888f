@@ -1,0 +1,17 @@
+I"h<p>Do you have a website? Is there a contact form on your website? Does this contact form send you an email? Is it written like this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href = </span><span class="s">"mailto: your_email@website.com"</span><span class="nt">&gt;</span>Send Email<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>If that is the case, you are doing it wrong….
+Okay, wrong may be a strong word, but you are definetly compromising your email address.</p>
+
+<p>Don’t you hate those junk emails you get sent where you think “What email list did I sign up for? Why did I get this email? I get so many junk emails!”</p>
+
+<p>One reason you are asking yourself those questions is because you DO actually sign up for random email lists. Another reason though, is that your email address was scraped by a bot, and sold on an email list.</p>
+
+<p>Just think of how easy it would be to write a bot that just searches the HTML of websites and saves any email addresses it finds (Note to self - This sounds really fun to make!).</p>
+
+<p>So what should you do instead? How do you allow people to contact you, while protecting your email, and not have to pay for a service of some kind….</p>
+
+<p>A simple solution is to write your own Email Server.</p>
+:ET
