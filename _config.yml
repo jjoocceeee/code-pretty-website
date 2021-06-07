@@ -1,7 +1,7 @@
 title:              STEM Book Club
 description:        STEM Book Club - A place for curious people to come together and learn about everything STEM.
 author:             Start Bootstrap
-baseurl:            "/code-pretty-website"
+baseurl:            "/"
 url:                ""
 
 # Social Profiles
