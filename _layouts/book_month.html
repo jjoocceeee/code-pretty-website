@@ -21,7 +21,7 @@ layout: default
       <div class="row align-items-center">
           <div class="col-lg-6 col-md-6 col-sm-12 mx-auto text-center justify-content-center">
             <div class="image">
-                <a href="{{ page.book_link | prepend: site.baseurl | replace: '//', '/' }}">
+                <a href="{{ page.book_image | prepend: site.baseurl | replace: '//', '/' }}">
                   <img src="{{ page.book_image | prepend: site.baseurl | replace: '//', '/' }}"
                     class=" border-white" alt="Code Princess">
                 </a>
@@ -30,9 +30,11 @@ layout: default
           <div class="col text-center justify-content-center">
             <div class="row">
               <div class="col">
-                <h1>
+                <a href={{ page.book_link }}>
+                  <h1>
                     {{ page.title}}
-                </h1>
+                  </h1>
+                </a>
               </div>
             </div>
             <div class="row">

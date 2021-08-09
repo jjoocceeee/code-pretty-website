@@ -5,8 +5,14 @@ short_titel: Pandmics
 author: Arup K. Chakraborty and Andrey S. Shaw
 author_website: https://www.goodreads.com/book/show/53730392-viruses-pandemics-and-immunity
 book_image: '/assets/images/book_club/book_covers/viruses.jpg'
+book_link: https://mitpress.mit.edu/books/viruses-pandemics-and-immunity
 month: July 2021
 thumbnail: '/assets/images/book_club/book_covers/viruses.jpg'
+tags:
+- Viruses
+- Pandemics
+- Immunity
+- Scientific Literacy
 ---
 
 
