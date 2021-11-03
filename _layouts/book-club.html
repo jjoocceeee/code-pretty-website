@@ -181,33 +181,33 @@ layout: default
     <div class="row mt-3">
       <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
         <h1>
-          October's Book Choice
+          {{ page.book_month}}'s Book Choice
         </h1>
       </div>
     </div>
     <div class="row align-items-center pt-3">
       <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
         <div class="image">
-          <a href="https://www.goodreads.com/book/show/43726517-hello-worl">
+          <a href={{page.book_author_website}}>
             <img
-              src="{{ '/assets/images/book_club/book_covers/hello_world.jpg' | prepend: site.baseurl | replace: '//', '/' }}"
-              class=" border-white" alt="Hello World Book">
+              src="{{ page.book_image | prepend: site.baseurl | replace: '//', '/' }}"
+              class=" border-white" alt={{page.book_short_title}}>
           </a>
         </div>
       </div>
       <div class="col-lg-8 col-md-8 col-sm-12 mx-auto text-center justify-content-center">
         <h3>
-          <a href="https://www.goodreads.com/book/show/43726517-hello-world">
-            Hello World: Being Human in the Age of Algorithms.
+          <a href={{page.book_author_website}}>
+            {{page.book_title}}
           </a>
         </h3>
-          <a href="https://www.goodreads.com/book/show/43726517-hello-world">
-            <h5>By Hannah Fry</h5>
+          <a href={{page.book_author_website}}>
+            <h5>By {{page.book_author}}</h5>
           </a>
         <p>
-          <span class="badge badge-pill primary-color">Ethics in Computing</span>
-          <span class="badge badge-pill primary-color">Artificial Intelligence</span>
-          <span class="badge badge-pill primary-color">Machine Learning</span>
+          {% for tag in page.tags %}
+            <span class="badge badge-pill primary-color">{{tag}}</span>
+          {% endfor %}
         </p>
       </div>
     </div>
@@ -222,7 +222,8 @@ layout: default
       </div>
     </div>
     <div class="row mb-5">
-    {% for bm in site.books %}
+    {% assign book_pages = site.books | sort:"order" %}
+    {% for bm in book_pages %}
       <div class="col-lg-3 col-md-3 col-sm-12 justify-content-center">
         <div class="row">
           <div class="col">
