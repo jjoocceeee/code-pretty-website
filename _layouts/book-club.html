@@ -12,15 +12,16 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
-          <!-- <div class="page-heading">
-          </div> -->
+          <div class="page-heading">
+            <h3>  </h3>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container py-5">
-    <div class="row">
+  <div class="container py-0">
+    <!-- <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
         <div class="image">
           <a href="{{ '/assets/images/book_club/logo/main_logo.png' | prepend: site.baseurl | replace: '//', '/' }}">
@@ -28,6 +29,11 @@ layout: default
               class=" border-white" alt="Book Club Logo">
           </a>
         </div>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col pt-3 text-center">
+        <h1>#TheSTEMBookClub</h1>
       </div>
     </div>
     <div class="row">
@@ -246,8 +252,20 @@ layout: default
     {% endfor %}
     </div>
   </div>
-  <div class="container-fluid bckgrnd"
-    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+      <div class="image">
+        <a href="{{ '/assets/images/book_club/logo/main_logo.png' | prepend: site.baseurl | replace: '//', '/' }}">
+          <img src="{{ '/assets/images/book_club/logo/main_logo.png' | prepend: site.baseurl | replace: '//', '/' }}"
+            class=" border-white" alt="Book Club Logo">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="container-fluid bckgrnd">
     <div class="row py-5">
       <div class="col col-lg-6 col-md-8 col-sm-12 mx-auto text-center">
         <span class="transparent">

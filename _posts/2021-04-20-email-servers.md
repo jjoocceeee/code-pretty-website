@@ -5,6 +5,7 @@ subtitle: "HTML email tag is NOT the way to go when adding a Contact button on y
 date: 2021-01-31 10:45:13 -0400
 background:
 thumbnail:
+publish: false
 ---
 
 Do you have a website? Is there a contact form on your website? Does this contact form send you an email? Is it written like this

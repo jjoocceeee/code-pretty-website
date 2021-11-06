@@ -4,14 +4,18 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead">
+<header class="masthead pb-0 mb-0"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
   <header class="masthead">
     {% endif %}
-   
+    <div class=""></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+          <div class="page-heading">
+            <h3></h3>
+          </div>
         </div>
       </div>
     </div>
@@ -23,7 +27,7 @@ layout: default
             <div class="image">
                 <a href="{{ page.book_image | prepend: site.baseurl | replace: '//', '/' }}">
                   <img src="{{ page.book_image | prepend: site.baseurl | replace: '//', '/' }}"
-                    class=" border-white" alt="Code Princess">
+                    class=" border-white" alt="Cultish">
                 </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
 ---
-quote_background: '/assets/Images/about/books-2.jpg'
+quote_background: '/assets/images/head_full_of_code-100.jpg'
 maincolor: '#AC716E'
 secondarycolor: '#F2CBCB'
 layout: default
@@ -31,32 +31,28 @@ layout: default
           Too Pretty to Code Ugly
         </h1>
         <h2>
-          PAGE COMING SOON!
+          Resources, products, and a community for the feminine developer
         </h2>
-        <p>
-          Resources, products, and a community for the feminine developer 
-        </p>
       </div>
     </div>
     <div class="row">
       <div class="col col-lg-6 col-md-12 col-sm-12">
         <a href="/pages/book-club.html">
-          <img src="/assets/Images/book_club/curled-14.jpg" class=" border-white img-thumbnail"
-            alt="STEM Book Club">
-            <span class="image-text-overlay">STEM Book Club</span>
+          <img src="/assets/images/book_club/curled-14.jpg" class=" border-white img-thumbnail" alt="STEM Book Club">
+          <span class="image-text-overlay">STEM Book Club</span>
         </a>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12">
-        <a href="/pages/code-princess.html">
-          <img src="/assets/Images/code_princess/pink_dress-13.jpg" class=" border-white img-thumbnail"
+        <a href="https://www.etsy.com/shop/CodePrettyTech">
+          <img src="/assets/images/products/bookmark.jpg" class=" border-white img-thumbnail"
             alt="Portfolio Piece">
-            <span class="image-text-overlay">Code Princesses</span>
+          <span class="image-text-overlay">Shop!</span>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- <div class="container-fluid mb-3" style="background-color: #{{ site.maincolor }}">
+  <div class="container-fluid mb-3" style="background-color: #{{ site.maincolor }}">
     <div class="row ">
       <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
         <p>
@@ -69,7 +65,8 @@ layout: default
         <div class="offset-1 col-3">
           <div class="form-group">
             <label for="EmailInput"></label>
-            <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp"
+              placeholder="Enter email">
           </div>
         </div>
         <div class="col-3">
@@ -81,23 +78,34 @@ layout: default
         <div class="col-3">
           <button type="submit" class="btn btn-primary btn-sm h-25 d-inline-block">I Want In!</button>
         </div>
-        </div>
+      </div>
     </form>
-  </div> -->
+  </div>
 
-  <!-- <div class="container-fluid bckgrnd mt-5"
+  <div class="container-fluid bckgrnd mt-5"
     style="background-image: url('{{ page.quote_background | prepend: site.baseurl | replace: '//', '/' }}')">
     <div class="row py-5">
-      <div class="col col-lg-6 col-md-8 col-sm-12 mx-auto text-center">
+      <div class="col col-lg-3 col-md-4 col-sm-none mx-auto text-center">
         <span class="transparent">
           <div class="post-heading">
-            <h3 class="">“I learned to always take on things I'd never done before. Growth and comfort do not coexist.”</h3>
+            <h3 class="">“I learned to always take on things I'd never done before. Growth and comfort do not coexist.”
+            </h3>
             <h5 class="subheading">- Ginni Rometty, CEO of IBM</h5>
           </div>
         </span>
       </div>
     </div>
   </div>
+
+
+  <div class="img-container text-center" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    <!-- <div class="row"> -->
+      <!-- <div class="col"> -->
+        <h2 class="pt-5 pb-5 mt-5 mb-5 justify-content-center" style="height: 275px;">Hello</h2>
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col text-center mb-3 mt-5">
@@ -105,6 +113,7 @@ layout: default
       </div>
     </div>
       {% for featuredPost in site.posts %}
+      {% if featuredPost.publish %}
       <div class="row my-3">  
         <div class="col-lg-4 col-md-4 col-sm-0 align-items-center d-none d-lg-block">
           <div class="image">
@@ -130,5 +139,6 @@ layout: default
         </div>
       </div>
       <hr>
+      {% endif %}
       {% endfor %}
-  </div> -->
+  </div>
