@@ -20,6 +20,10 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-redirect-from
+  
+whitelist:
+  - jekyll-redirect-from
 collections:
   books:
     output: true
@@ -28,6 +32,9 @@ collections:
     output: true
     permalink: /:collection/:title
   code_princess:
+    output: true
+    permalink: /:collection/:title
+  products:
     output: true
     permalink: /:collection/:title
 

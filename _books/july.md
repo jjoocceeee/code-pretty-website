@@ -56,8 +56,8 @@ During the 17th century Black Plague epidemic, doctors wore masks when seeing si
 <div class="row align-items-center">
     <div class="col col-lg-4 col-md-4 col-sm-12 mx-auto text-center justify-content-center">
         <div class="image">
-            <a href="./assets/images/book_club/july/black_plague_mask.png">
-                <img src="./assets/images/book_club/july/black_plague_mask.png"/>
+            <a href="../assets/images/book_club/july/black_plague_mask.png">
+                <img src="../assets/images/book_club/july/black_plague_mask.png"/>
             </a>
         </div>
     </div>
